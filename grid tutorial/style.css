@@ -1,0 +1,75 @@
+.container-1 {
+    /*min-height: 100vh;*/
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    /*grid-template-columns: 1fr minmax(300px, 1fr) 1fr;*/
+    /*grid-template-rows: repeat(4, 100px);*/
+
+    /*column-row*/
+    grid-gap: 15px 25px;
+
+    /* fr won't let it happen because it will cover up the whole space*/
+    /*justify-content: space-between;*/
+    /*align-content: start;*/
+
+    /* auto-fill keeps creating */
+    /*    grid-template-columns: repeat(auto-fill, 700px);;*/
+
+    /* auto-fit only fits */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
+    background-color: darkgrey;
+
+}
+
+.container-2 {
+    /*min-height: 100vh;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));;
+    grid-gap: 15px 25px;
+    background-color: lightblue;
+
+}
+
+.cell {
+    border: 3px solid #262626;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #262626;
+    text-align: center;
+    background-color: chartreuse;
+}
+
+.cell-1 {
+    order: 2;
+    background-color: brown;
+}
+
+.cell-2 {
+    background-color: yellow;
+}
+
+.cell-3 {
+    background-color: orange;
+    order: 1;
+    align-self: start;
+}
+
+.cell-4 {
+    background-color: blue;
+    grid-column: 1 / -1;
+    order: -1;
+
+}
+
+.cell-5 {
+    background-color: green;
+}
+
+.cell-6 {
+    background-color: red;
+}
+
+.cell-7 {
+    background-color: purple;
+
+}
